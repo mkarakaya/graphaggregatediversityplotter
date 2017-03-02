@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import json
 
-fname = "data"
+fname = "data.json"
 with open(fname) as f:
     lineJsonList = json.load(f)
 
