@@ -1,13 +1,19 @@
 import matplotlib.pyplot as plt
 import json
+import numpy as np
 
-fname = "data.json"
+fname = "SVD Movielens100K_precision_aggregate.json"
 with open(fname) as f:
-    lineJsonList = json.load(f)
+    jsonData = json.load(f)
 
-for lineJson in lineJsonList:
-    plt.plot(lineJson["xAxis"], [1, 2, 3, 4], label=lineJson["label"])
+for lineJson in jsonData["graphItemDataList"]:
+    order = np.argsort(lineJson["xAxis"])
+    xs = np.array(lineJson["xAxis"])[order]
+    ys = np.array(lineJson["yAxis"])[order]
+    plt.plot(xs, ys, label=lineJson["displayName"], marker='o')
 
-plt.legend()
-plt.ylabel('some numbers')
+plt.legend(loc='upper left')
+plt.suptitle(jsonData["title"])
+plt.ylabel(jsonData["yAxisLabel"])
+plt.xlabel(jsonData["xAxisLabel"])
 plt.show()
