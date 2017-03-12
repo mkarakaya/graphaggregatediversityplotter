@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import json
 import numpy as np
 
-fname = "../../data/proposed/SVD Movielens100K_precision_aggregate.json"
+fname = "../../data/proposed/SVD Yahoo Music_precision_gini.json"
 with open(fname) as f:
     jsonData = json.load(f)
 
