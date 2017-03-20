@@ -1,1 +1,19 @@
-{"xAxisLabel":"Items sorted by # of Ratings","yAxisLabel":"Average Recommendation Count","title":"Items sorted by # of Ratings VS Average Recommendation Count","graphItemDataList":[{"displayName":"Movielens","xAxis":{"0-200":163.08707996540076,"200-400":1302.074628968254,"400-600":3519.6140833333334,"600-800":5720.599916666667,"800-1000":7035.235,"1000-1200":8668.449152542373},"yAxis":null}]}
+{
+  "xAxisLabel": "Items sorted by # of ratings",
+  "yAxisLabel": "Average recommendation count",
+  "title": "",
+  "graphItemDataList": [
+    {
+      "displayName": "",
+      "xAxis": {
+        "0-200": 163.08707996540076,
+        "200-400": 1302.074628968254,
+        "400-600": 3519.6140833333334,
+        "600-800": 5720.599916666667,
+        "800-1000": 7035.235,
+        "1000-1200": 8668.449152542373
+      },
+      "yAxis": null
+    }
+  ]
+}

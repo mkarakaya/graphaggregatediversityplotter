@@ -1,1 +1,19 @@
-{"xAxisLabel":"Items sorted by # of Ratings","yAxisLabel":"Average Recommendation Count","title":"Items sorted by # of Ratings VS Average Recommendation Count","graphItemDataList":[{"displayName":"Yahoo Music","xAxis":{"0-100":411.20818094980893,"100-200":3549.2797499999997,"200-300":6280.503333333334,"300-400":7890.97,"400-500":9152.3,"500-600":9875.636363636364},"yAxis":null}]}
+{
+  "xAxisLabel": "Items sorted by # of ratings",
+  "yAxisLabel": "Average recommendation count",
+  "title": "",
+  "graphItemDataList": [
+    {
+      "displayName": "",
+      "xAxis": {
+        "0-100": 411.20818094980893,
+        "100-200": 3549.2797499999997,
+        "200-300": 6280.503333333334,
+        "300-400": 7890.97,
+        "400-500": 9152.3,
+        "500-600": 9875.636363636364
+      },
+      "yAxis": null
+    }
+  ]
+}
