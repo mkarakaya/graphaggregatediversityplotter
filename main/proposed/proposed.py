@@ -1,22 +1,30 @@
-import matplotlib.pyplot as plt
 import json
+import matplotlib.pyplot as plt
 import numpy as np
+from os import listdir
 
-fname = "../../data/proposed/10/SVD Yahoo Music_precision_individual diversity.json"
-with open(fname) as f:
-    jsonData = json.load(f)
+path = "../../data/proposed/"
+folder = "10"
+save_dir = "/home/mokarakaya/Documents/latex/"
 
-for lineJson in jsonData["graphItemDataList"]:
-    order = np.argsort(lineJson["xAxis"])
-    xs = np.array(lineJson["xAxis"])[order]
-    ys = np.array(lineJson["yAxis"])[order]
-    plt.plot(xs, ys, label=lineJson["displayName"], marker='o')
+files = [f for f in listdir(path + folder)]
+for file_name in files:
+    print file_name
+    with open(path + folder + '/' + file_name) as f:
+        jsonData = json.load(f)
+    plt.figure()
+    for lineJson in jsonData["graphItemDataList"]:
+        order = np.argsort(lineJson["xAxis"])
+        xs = np.array(lineJson["xAxis"])[order]
+        ys = np.array(lineJson["yAxis"])[order]
+        plt.plot(xs, ys, label=lineJson["displayName"], marker='o')
 
-plt.legend(loc='upper left')
-font = {'weight': 'bold', 'size': 13}
+    plt.legend(loc='upper right')
+    font = {'weight': 'bold', 'size': 13}
 
-plt.rc('font', **font)
-plt.suptitle(jsonData["title"])
-plt.ylabel(jsonData["yAxisLabel"],fontsize=22)
-plt.xlabel(jsonData["xAxisLabel"], fontsize=22)
-plt.show()
+    plt.rc('font', **font)
+    plt.suptitle(jsonData["title"])
+    plt.ylabel(jsonData["yAxisLabel"], fontsize=22)
+    plt.xlabel(jsonData["xAxisLabel"], fontsize=22)
+    plt.savefig(save_dir + folder + file_name.replace('.json', '.eps'))
+
