@@ -4,8 +4,9 @@ import numpy as np
 from os import listdir
 
 path = "../../data/proposed/"
-folder = "10"
+folder = "20"
 save_dir = "/home/mokarakaya/Documents/latex/"
+markerDict = {'SVD-based': 'o', 'Graph-based': 'v', 'Popularity': '*', 'AverageRating': 's'}
 
 files = [f for f in listdir(path + folder)]
 for file_name in files:
@@ -17,7 +18,8 @@ for file_name in files:
         order = np.argsort(lineJson["xAxis"])
         xs = np.array(lineJson["xAxis"])[order]
         ys = np.array(lineJson["yAxis"])[order]
-        plt.plot(xs, ys, label=lineJson["displayName"], marker='o')
+        plt.plot(xs, ys, label=lineJson["displayName"],
+                 marker=markerDict[lineJson["displayName"]], markersize=10)
 
     plt.legend(loc='upper left')
     font = {'weight': 'bold', 'size': 13}
