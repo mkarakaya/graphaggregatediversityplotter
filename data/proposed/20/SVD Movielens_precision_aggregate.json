@@ -1,10 +1,10 @@
 {
-  "xAxisLabel": "Precision",
-  "yAxisLabel": "Diversity-in-top-N",
-  "title": "",
+  "xAxisLabel": "precision",
+  "yAxisLabel": "aggregate",
+  "title": "SVD Movielens (N = 20)",
   "graphItemDataList": [
     {
-      "displayName": "SVD-based",
+      "displayName": "GraphSVD",
       "xAxis": [
         0.02332763671875,
         0.03837890625,
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "displayName": "Graph-based",
+      "displayName": "Graph",
       "xAxis": [
         0.030412496948987063,
         0.02455455211130095,

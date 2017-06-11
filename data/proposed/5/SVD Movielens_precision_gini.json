@@ -1,10 +1,10 @@
 {
-  "xAxisLabel": "Precision",
-  "yAxisLabel": "Gini-diversity",
-  "title": "",
+  "xAxisLabel": "precision",
+  "yAxisLabel": "gini",
+  "title": "SVD Movielens (N = 5)",
   "graphItemDataList": [
     {
-      "displayName": "SVD-based",
+      "displayName": "GraphSVD",
       "xAxis": [
         0.05147347740667976,
         0.0337426326129666,
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "displayName": "Graph-based",
+      "displayName": "Graph",
       "xAxis": [
         0.04865262126408623,
         0.06291033806957373,
