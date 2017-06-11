@@ -19,7 +19,7 @@ for file_name in files:
         ys = np.array(lineJson["yAxis"])[order]
         plt.plot(xs, ys, label=lineJson["displayName"], marker='o')
 
-    plt.legend(loc='upper right')
+    plt.legend(loc='upper left')
     font = {'weight': 'bold', 'size': 13}
 
     plt.rc('font', **font)
