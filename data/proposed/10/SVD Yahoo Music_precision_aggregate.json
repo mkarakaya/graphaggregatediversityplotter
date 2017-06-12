@@ -1,16 +1,16 @@
 {
-  "xAxisLabel": "precision",
-  "yAxisLabel": "aggregate",
-  "title": "SVD Yahoo Music",
+  "xAxisLabel": "Precision",
+  "yAxisLabel": "Diversity-in-top-N",
+  "title": "",
   "graphItemDataList": [
     {
-      "displayName": "GraphSVD",
+      "displayName": "SVD-based",
       "xAxis": [
-  0.024,
-0.022,
-0.018,
+        0.022,
+0.021,
 0.019,
-0.018,
+0.017,
+0.015,
 0.013,
 0.012,
 0.011,
@@ -18,19 +18,24 @@
 
       ],
       "yAxis": [
-       807,
-820,
-832,
-970,
-1048,
-1088,
-1160,
-1258,
-1364
-      ]
+1020,
+1230,
+1530,
+1850,
+2096,
+2176,
+2320,
+2516,
+2728
+
+
+
+
+ 
+     ]
     },
     {
-      "displayName": "Graph",
+      "displayName": "Graph-based",
       "xAxis": [
         0.012827781715095677,
         0.016725726435152376,

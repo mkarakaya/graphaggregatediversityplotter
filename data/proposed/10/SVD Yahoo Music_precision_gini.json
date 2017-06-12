@@ -1,16 +1,16 @@
 {
-  "xAxisLabel": "precision",
-  "yAxisLabel": "gini",
-  "title": "SVD Yahoo Music",
+  "xAxisLabel": "Precision",
+  "yAxisLabel": "Gini-diversity",
+  "title": "",
   "graphItemDataList": [
     {
-      "displayName": "GraphSVD",
+      "displayName": "SVD-based",
       "xAxis": [
-    0.024,
-0.022,
-0.018,
+ 0.022,
+0.021,
 0.019,
-0.018,
+0.017,
+0.015,
 0.013,
 0.012,
 0.011,
@@ -18,7 +18,7 @@
 
       ],
       "yAxis": [
-        0.047,
+   0.047,
 0.046,
 0.048,
 0.066,
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "displayName": "Graph",
+      "displayName": "Graph-based",
       "xAxis": [
         0.012827781715095677,
         0.01410347271438696,
