@@ -21,7 +21,10 @@ for file_name in files:
         plt.plot(xs, ys, label=lineJson["displayName"],
                  marker=marker_dict[lineJson["displayName"]], markersize=10)
 
-    plt.legend(loc='upper left')
+    ax = plt.gca()
+    min_y, max_y = ax.get_ylim()
+    plt.ylim(min_y, float(jsonData['yMax']))
+    plt.legend(loc='upper ' + jsonData['legend'])
     font = {'weight': 'bold', 'size': 13}
 
     plt.rc('font', **font)
