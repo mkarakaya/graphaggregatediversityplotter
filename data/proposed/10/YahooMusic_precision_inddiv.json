@@ -3,7 +3,7 @@
   "yAxisLabel": "Individual-diversity",
   "title": "",
   "yMax":"0.95",
-  "legend":"left",
+  "legend":"right",
   "graphItemDataList": [
     {
       "displayName": "SVD-based",
