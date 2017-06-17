@@ -2,7 +2,7 @@
   "xAxisLabel": "Precision",
   "yAxisLabel": "Individual-diversity",
   "title": "",
-  "yMax":"0.975",
+  "yMax":"1.00",
   "legend":"left",
   "graphItemDataList": [
     {

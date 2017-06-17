@@ -2,8 +2,8 @@
   "xAxisLabel": "Precision",
   "yAxisLabel": "Individual-diversity",
   "title": "",
-  "yMax":"0.88",
-  "legend":"left",
+  "yMax":"1.00",
+  "legend":"right",
   "graphItemDataList": [
     {
       "displayName": "SVD-based",
