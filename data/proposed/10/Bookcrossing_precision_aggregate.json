@@ -4,6 +4,8 @@
   "title": "",
   "yMax": "2600",
   "yMin": "900",
+  "xMax": "0.0052",
+  "xMin": "0.0013",
   "legend":"left",
   "graphItemDataList": [
     {

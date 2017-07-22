@@ -4,8 +4,8 @@ import numpy as np
 from os import listdir
 
 path = "../../data/proposed/"
-folder = "10"
-save_dir = "/home/mokarakaya/Documents/latex/"
+folder = "20"
+save_dir = "/home/mokarakaya/Documents/graphaggregatediversitytex/"
 marker_dict = {'SVD-based': 'o', 'Graph-based': 'v', 'Popularity': '*', 'AverageRating': 's'}
 
 files = [f for f in listdir(path + folder)]
@@ -23,9 +23,19 @@ for file_name in files:
 
     ax = plt.gca()
     min_y, max_y = ax.get_ylim()
+    min_x, max_x = ax.get_xlim()
+
     if "yMin" in jsonData:
         min_y = float(jsonData['yMin'])
+
+    if "xMin" in jsonData:
+        min_x = float(jsonData['xMin'])
+
+    if "xMax" in jsonData:
+        max_x = float(jsonData['xMax'])
+
     plt.ylim(min_y, float(jsonData['yMax']))
+    plt.xlim(min_x, max_x)
     plt.legend(loc='upper ' + jsonData['legend'])
     font = {'weight': 'bold', 'size': 13}
 

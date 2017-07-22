@@ -3,6 +3,7 @@
   "yAxisLabel": "Individual-diversity",
   "title": "",
   "yMax":"1.00",
+  "xMax":"0.0047",
   "legend":"right",
   "graphItemDataList": [
     {
