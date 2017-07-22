@@ -3,6 +3,7 @@
   "yAxisLabel": "Gini-diversity",
   "title": "",
   "yMax":"0.35",
+  "yMin":"0.01",
   "legend":"left",
   "graphItemDataList": [
     {

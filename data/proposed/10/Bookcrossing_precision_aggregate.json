@@ -3,6 +3,7 @@
   "yAxisLabel": "Diversity-in-top-N",
   "title": "",
   "yMax": "2600",
+  "yMin": "900",
   "legend":"left",
   "graphItemDataList": [
     {

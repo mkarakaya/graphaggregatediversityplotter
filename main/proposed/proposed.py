@@ -23,6 +23,8 @@ for file_name in files:
 
     ax = plt.gca()
     min_y, max_y = ax.get_ylim()
+    if "yMin" in jsonData:
+        min_y = float(jsonData['yMin'])
     plt.ylim(min_y, float(jsonData['yMax']))
     plt.legend(loc='upper ' + jsonData['legend'])
     font = {'weight': 'bold', 'size': 13}
